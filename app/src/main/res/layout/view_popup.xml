@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--android:background="@color/colorAccentLight"-->
+
+            <ImageView
+                android:id="@+id/pop_up_image"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="2"
+                android:src="@drawable/ic_success" />
+
+            <TextView
+                android:id="@+id/pop_up_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:gravity="center"
+                android:padding="@dimen/padding_guideline"
+                android:textSize="16sp"
+                tools:text="@string/app_name" />
+            <!--android:textColor="@color/colorAccentDark"-->
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
+

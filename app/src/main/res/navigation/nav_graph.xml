@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/workoutFragment">
+
+    <fragment
+        android:id="@+id/workoutFragment"
+        android:name="com.durui.feat.software_interface.ui.home.workout.WorkoutFragment"
+        android:label="WorkoutFragment"
+        tools:layout="@layout/fragment_workout">
+        <action
+            android:id="@+id/action_workoutFragment_to_dataFragment"
+            app:destination="@id/dataFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/fade_out"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/workoutFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_workoutFragment_to_meFragment"
+            app:destination="@id/meFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/fade_out"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/workoutFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/dataFragment"
+        android:name="com.durui.feat.software_interface.ui.home.data.DataFragment"
+        android:label="DataFragment"
+        tools:layout="@layout/fragment_data">
+        <action
+            android:id="@+id/action_dataFragment_to_workoutFragment"
+            app:destination="@id/workoutFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:popUpTo="@id/workoutFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_dataFragment_to_meFragment"
+            app:destination="@id/meFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/fade_out"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:popUpTo="@id/workoutFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/meFragment"
+        android:name="com.durui.feat.software_interface.ui.home.me.MeFragment"
+        android:label="MeFragment"
+        tools:layout="@layout/fragment_me">
+        <action
+            android:id="@+id/action_meFragment_to_workoutFragment"
+            app:destination="@id/workoutFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:popUpTo="@id/workoutFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_meFragment_to_dataFragment"
+            app:destination="@id/dataFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/fade_out"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:popUpTo="@id/workoutFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+</navigation>

@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.durui.feat",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 16,
+      "versionName": "1.16",
+      "outputFile": "vision-quickstart-release.apk"
+    }
+  ],
+  "elementType": "File"
+}

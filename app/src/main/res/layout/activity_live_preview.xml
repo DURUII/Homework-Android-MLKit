@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--fixme datebinding & layout & viewmodel & lifecycle-->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true">
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/preview_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></androidx.camera.view.PreviewView>
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/time_text"-->
+        <!--            style="@style/CustomBody1"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:text="已经坚持多长时间" />-->
+
+        <com.durui.feat.computer_vision.vision_base.GraphicOverlay
+            android:id="@+id/graphic_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/settings_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="end|top"
+            android:layout_margin="@dimen/margin_button"
+            android:contentDescription="Settings Button"
+            android:src="@drawable/ic_settings" />
+        <!--app:tint="@color/colorPrimaryLight"-->
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/facing_switch"
+            style="@style/CustomFAB"
+            android:layout_gravity="start|bottom"
+            app:srcCompat="@drawable/ic_camera" />
+        <!--app:tint="@color/colorPrimaryLight"-->
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/stop_btn"
+            style="@style/CustomFAB"
+            app:srcCompat="@drawable/ic_stop" />
+        <!--app:tint="@color/colorPrimaryLight"-->
+
+        <!-- Linear progress indicator -->
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progress_live_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/CustomBody1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="COUNT"
+            android:visibility="gone"
+            android:textColor="@color/holder"
+            app:layout_anchor="@+id/preview_view"
+            app:layout_anchorGravity="center" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

@@ -1,0 +1,52 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.Material3.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorPrimaryVariant">@color/primaryLightColor</item>
+        <item name="colorOnPrimary">@color/primaryTextColor</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryDarkColor</item>
+        <item name="colorOnSecondary">@color/secondaryTextColor</item>
+        <!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--        <item name="colorAccent">@color/colorAccent</item>-->
+        <!--        <item name="colorOnSecondary">@color/white</item>-->
+        <!--        <item name="colorOnSurface">@color/primaryDarkColor</item>-->
+        <item name="colorPrimaryContainer">#D5E7F6</item>
+        <item name="colorOnPrimaryContainer">#134065</item>
+        <item name="colorSecondaryContainer">#D5E7F6</item>
+
+        <item name="android:fontFamily">@font/misans</item>
+        <item name="fontFamily">@font/misans</item>
+        <item name="textAppearanceHeadline6">@style/CustomHeadline6</item>
+    </style>
+
+    <style name="CustomFAB" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">end|bottom</item>
+        <item name="android:layout_margin">@dimen/margin_button</item>
+        <!--        <item name="backgroundTint">@color/colorPrimary</item>-->
+        <item name="borderWidth">0dp</item>
+        <item name="elevation">8dp</item>
+        <!--        <item name="rippleColor">@color/colorPrimaryDark</item>-->
+    </style>
+
+    <style name="CustomHeadline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="CustomBody1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">50sp</item>
+        <item name="android:lineSpacingMultiplier">1.25</item>
+        <item name="android:padding">@dimen/padding_guideline</item>
+    </style>
+
+    <style name="PopupTopAnim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_up_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_up_out</item>
+    </style>
+
+</resources>

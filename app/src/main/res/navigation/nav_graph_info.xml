@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_info"
+    app:startDestination="@id/avatarFragment">
+
+    <fragment
+        android:id="@+id/avatarFragment"
+        android:name="com.durui.feat.software_interface.ui.info.fragment.AvatarFragment"
+        android:label="AvatarFragment"
+        tools:layout="@layout/fragment_avatar">
+        <action
+            android:id="@+id/action_avatarFragment_to_sexFragment"
+            app:destination="@id/sexFragment"
+            app:enterAnim="@anim/slide_in_right" />
+        <action
+            android:id="@+id/action_avatarFragment_to_heightFragment"
+            app:destination="@id/heightFragment"
+            app:popUpTo="@id/avatarFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/sexFragment"
+        android:name="com.durui.feat.software_interface.ui.info.fragment.SexFragment"
+        android:label="SexFragment"
+        tools:layout="@layout/fragment_sex">
+        <action
+            android:id="@+id/action_sexFragment_to_birthFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:destination="@id/birthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/birthFragment"
+        android:name="com.durui.feat.software_interface.ui.info.fragment.BirthFragment"
+        android:label="BirthFragment"
+        tools:layout="@layout/fragment_birth">
+        <action
+            android:id="@+id/action_birthFragment_to_heightFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:destination="@id/heightFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/heightFragment"
+        android:name="com.durui.feat.software_interface.ui.info.fragment.HeightFragment"
+        android:label="HeightFragment"
+        tools:layout="@layout/fragment_height">
+        <action
+            android:id="@+id/action_heightFragment_to_weightFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:destination="@id/weightFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weightFragment"
+        android:name="com.durui.feat.software_interface.ui.info.fragment.WeightFragment"
+        android:label="WeightFragment"
+        tools:layout="@layout/fragment_weight" />
+
+</navigation>

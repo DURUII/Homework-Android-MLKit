@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="请填写您的体重"
+            android:textColor="@color/primaryDarkColor"
+            android:textSize="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.15" />
+
+        <com.lsp.RulerView
+            android:id="@+id/new_weight_ruler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bgColor="#ECF7FF"
+            app:firstScale="50"
+            app:isBgRoundRect="true"
+            app:largeScaleColor="@color/primaryColor"
+            app:largeScaleStroke="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.45"
+            app:maxScale="150"
+            app:midScaleColor="#999999"
+            app:midScaleStroke="3dp"
+            app:minScale="0"
+            app:resultNumColor="@color/primaryDarkColor"
+            app:resultNumTextSize="20sp"
+            app:rulerHeight="50dp"
+            app:rulerToResultgap="30dp"
+            app:scaleCount="10"
+            app:scaleGap="10dp"
+            app:scaleLimit="10"
+            app:scaleNumColor="#666666"
+            app:scaleNumTextSize="16sp"
+            app:showScaleResult="true"
+            app:smallScaleColor="#aaaaaa"
+            app:smallScaleStroke="2dp"
+            app:unit="kg"
+            app:unitColor="@color/blue_Text"
+            app:unitTextSize="10sp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/next_step_btn"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="66dp"
+            android:text=" 下 一 步 "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.50"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.90" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

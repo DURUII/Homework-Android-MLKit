@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bmi_index_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="20dp"
+            tools:text="您当前BMI指数为：BMI" />
+
+        <org.eazegraph.lib.charts.ValueLineChart
+            android:id="@+id/weight_barchart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+
+            android:pointerIcon="top_right_diagonal_double_arrow"
+            app:egCurveSmoothness="0.4"
+            app:egLegendHeight="40dp"
+            app:egUseCubic="true"
+            app:egUseOverlapFill="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@color/primaryColor"
+            android:textStyle="bold"
+            android:text="用户运动排行榜" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/live_record_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="6" />
+    </LinearLayout>
+
+
+    <!--        <com.google.android.material.chip.ChipGroup-->
+    <!--            android:id="@+id/chipGroup"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="@dimen/margin_button"-->
+    <!--            app:chipSpacingHorizontal="42dp"-->
+    <!--            app:singleLine="false"-->
+    <!--            tools:layout_editor_absoluteX="20dp">-->
+
+    <!--            &lt;!&ndash; Chips can be declared here, or added dynamically. &ndash;&gt;-->
+
+    <!--            <com.google.android.material.chip.Chip-->
+    <!--                style="@style/Widget.Material3.Chip.Assist"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="aaa"-->
+    <!--                app:chipIcon="@drawable/ic_me" />-->
+
+    <!--            <com.google.android.material.chip.Chip-->
+    <!--                style="@style/Widget.Material3.Chip.Filter"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="aaa" />-->
+
+
+    <!--            <com.google.android.material.chip.Chip-->
+    <!--                style="@style/Widget.Material3.Chip.Input"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="aaa" />-->
+
+    <!--            <com.google.android.material.chip.Chip-->
+    <!--                style="@style/Widget.Material3.Chip.Suggestion"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="aaa" />-->
+
+    <!--        </com.google.android.material.chip.ChipGroup>-->
+
+    <!--        &lt;!&ndash; Circular progress indicator &ndash;&gt;-->
+    <!--        <com.google.android.material.progressindicator.CircularProgressIndicator-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:indeterminate="true" />-->
+
+</layout>

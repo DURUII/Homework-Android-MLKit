@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#bbdefb</color>
+    <color name="primaryLightColor">#eeffff</color>
+    <color name="primaryDarkColor">#8aacc8</color>
+    <color name="secondaryColor">#b2ebf2</color>
+    <color name="secondaryDarkColor">#81b9bf</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="secondaryTextColor">#000000</color>
+
+    <color name="blue_Text">#4176DE</color>
+    <color name="grey_300">#F3F3F7</color>
+
+    <!--    myColor-->
+    <color name="holder">#F4F5F8</color>
+    <!--        <color name="colorPrimary">#684FB5</color>-->
+    <!--        <color name="colorPrimaryDark">#5D5070</color>-->
+    <!--        <color name="colorPrimaryLight">#F4EFFD</color>-->
+    <color name="colorAccent">#01D88E</color>
+    <color name="colorFail">#FC355D</color>
+    <!--        <color name="colorAccentDark">#00A97B</color>-->
+    <!--        <color name="colorAccentLight">#E4FEF3</color>-->
+
+</resources>
